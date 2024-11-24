@@ -3,6 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{F7E55CA3-A10F-4FFE-A073-9B24482C9096}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "VirtualMachine", "VirtualMachine", "{38DBB4C2-2F4D-4EC3-A90C-000B63396E0C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{36649C17-2A72-4046-A53E-4145EC487A90}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Redplcs.ChipEight.VirtualMachine.Core", "src\VirtualMachine\Core\src\Redplcs.ChipEight.VirtualMachine.Core.csproj", "{1098F250-6E71-49D3-9FB1-443A3B87229A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -10,5 +18,16 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1098F250-6E71-49D3-9FB1-443A3B87229A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1098F250-6E71-49D3-9FB1-443A3B87229A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1098F250-6E71-49D3-9FB1-443A3B87229A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1098F250-6E71-49D3-9FB1-443A3B87229A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{38DBB4C2-2F4D-4EC3-A90C-000B63396E0C} = {F7E55CA3-A10F-4FFE-A073-9B24482C9096}
+		{36649C17-2A72-4046-A53E-4145EC487A90} = {38DBB4C2-2F4D-4EC3-A90C-000B63396E0C}
+		{1098F250-6E71-49D3-9FB1-443A3B87229A} = {36649C17-2A72-4046-A53E-4145EC487A90}
 	EndGlobalSection
 EndGlobal
