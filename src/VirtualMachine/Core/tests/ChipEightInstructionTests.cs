@@ -21,6 +21,7 @@ public abstract class ChipEightInstructionTests<TInstruction> where TInstruction
 		{
 			ChipEightSysInstruction => ChipEightMnemonic.Sys,
 			ChipEightClrInstruction => ChipEightMnemonic.Clr,
+			ChipEightRtsInstruction => ChipEightMnemonic.Rts,
 			_ => throw new InvalidOperationException("The instruction is unknown")
 		};
 	}
